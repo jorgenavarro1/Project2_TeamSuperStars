@@ -1,2 +1,2 @@
-# Project2_Team3
+# Project2_TeamSuperStars
 Website redesign project 2
