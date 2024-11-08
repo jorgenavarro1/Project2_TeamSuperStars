@@ -109,47 +109,110 @@ header {
 #promo-text, h2 {
   font-size: 1em;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   margin-top: 40px;
 }
 #promo-text, html {
-    line-height: 3em; /* 52px */
     font-size: 16px; 
 }
 
-input {
-  height: 30px;
-  margin-bottom: 10px;
-  width: 98%;
-  box-sizing: border-box;
-}
-
-div {
-  width: 98%;
-  margin: 0 auto;
+.form {
+    margin-bottom: 10px;
+    width: 98%;
 }
 
 label {
-  text-align: center;
-  height: 30px;
+    text-align: center;
+    height: 30px;
+}
+input {
+    width: 120%;
+    align-items: center;
 }
 
 
 .button {
-  background-color: rgb(31, 69, 92);
-  width: 90%;
+  background-color: rgb(77, 5, 5);
+  width: 100%;
   padding: 20px;
 }
 
-main {
-  padding: 50px;
+.form, main {
+  padding: 40px;
   text-align: center;
+  width: 100%;
 }
 
 
 @media screen and (min-width: 620px) {
+.form, h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    text-underline-position: under;
+  }
 
-  
+input {
+    height: 40px;
+    margin-bottom: 20px;
+    width: 90%;
+    border-color: gray;
+    text-align: center;
+  }
+
+
+.button {
+    margin-bottom: 10px;
+    width: 50%;
+  }
+
+.form, body {
+    padding-top: 20px;
+  }
+
+ .form {
+    line-height: 4em; /* 52px */
+    font-size: 15px; 
+ }
+
+ label {
+    width: 90%;
+ }
 
 @media screen and (min-width: 960px) {
+input {
+    height: 60px;
+    margin-bottom: 0px;
+    width: 30%;
+  }
+
+.form, label,  {
+    font-size: 18;
+}
+
+.button {
+    text-align: center;
+    width: 20%;
+    float: right;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+.form, body {
+    padding-top: 50px;
+  }
+
+
+.form, html {
+    line-height: 1em; /* 86px */ 
+    text-align: center;
+  }
+
+.form, h1 {
+    font-size: 40px;
+  }
+
+.form {
+    font-size: 20px;
+}
+}
   
