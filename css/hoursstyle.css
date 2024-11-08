@@ -5,7 +5,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* This container wraps all content inside the body */
 .body-container {
     display: flex;
     align-items: center;
@@ -13,6 +12,7 @@
     min-height: 100vh;
     background-color: #f5f5f5;
     padding: 20px;
+    flex-direction: column;
 }
 
 .container {
@@ -25,13 +25,11 @@
     width: 100%;
 }
 
-/* Styling for the h1 section */
 .h1-container {
     margin-bottom: 20px;
-    background-color: #ffe5e5; /* Optional: background color for the h1 container */
-    padding: 10px;
+    background-color: #FC421B; 
     border-radius: 8px;
-    color: #333;
+    color: #fff;
     font-size: 2em;
 }
 
@@ -72,4 +70,46 @@
     flex: 1;
     text-align: right;
 }
- 
+
+#main-nav-hours {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#main-nav-hours ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+#main-nav-hours ul li {
+    margin: 10px 0;
+    display: inline-block;
+}
+
+#main-nav-hours ul li a {
+    color: #FC421B;
+    background-color: #fff;
+    border: 2px solid #FC421B;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#main-nav-hours ul li a:hover {
+    background-color: #FC421B;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#main-nav-hours ul li a.active {
+    background-color: #red;
+    color: white;
+    border-color: #pink;
+}
