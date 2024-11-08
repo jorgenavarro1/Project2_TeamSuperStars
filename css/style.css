@@ -66,3 +66,22 @@ h1 {
     flex: 1;
     text-align: right;
 }
+
+#main-nav ul {
+  display: flex;
+  list-style: none;
+}
+#main-nav ul li {
+  margin: 15px 40px;
+}
+#main-nav ul li a {
+  color: black;
+  text-decoration: underline;
+}
+
+#main-nav ul li a:hover {
+  background-color: #333;
+  color: black;
+  border-radius: 500px;
+  text-decoration: underline;
+}
