@@ -13,6 +13,7 @@
     min-height: 100vh;
     background-color: #f5f5f5;
     padding: 20px;
+    flex-direction: column; /* Stack items vertically */
 }
 
 .container {
@@ -72,27 +73,35 @@
     text-align: right;
 }
 
+/* Main navigation container */
+#main-nav-hours {
+    width: 100%; /* Ensure the nav takes full width */
+    margin-top: 20px; /* Add some margin for spacing */
+}
+
 #main-nav-hours ul {
     list-style: none;
     padding: 0;
-    display: block; /* Removes any flex display */
+    margin: 0;
+    display: block;
 }
 
 #main-nav-hours ul li {
     margin: 15px 0; /* Vertical space between items */
-    display: block; /* Ensures items stack vertically */
+    display: block; /* Ensures items are stacked vertically */
 }
 
 #main-nav-hours ul li a {
     color: black;
-    text-decoration: underline;
+    text-decoration: none; /* Remove underline by default */
     padding: 10px 15px; /* Adds padding */
-    display: block; /* Full-width clickable link */
+    display: block; /* Ensures links are block-level */
 }
 
+/* Hover effects for links */
 #main-nav-hours ul li a:hover {
     background-color: #333;
     color: white;
-    border-radius: 500px;
-    text-decoration: underline;
+    border-radius: 5px; /* Soften the rounded corners */
+    text-decoration: none; /* Keep the links without underline on hover */
 }
