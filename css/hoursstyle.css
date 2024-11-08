@@ -75,17 +75,19 @@
 #main-nav-hours ul {
     list-style: none;
     padding: 0;
+    display: block; /* Removes any flex display */
 }
 
 #main-nav-hours ul li {
-    margin: 15px 0; /* Vertical margin between items */
+    margin: 15px 0; /* Vertical space between items */
+    display: block; /* Ensures items stack vertically */
 }
 
 #main-nav-hours ul li a {
     color: black;
     text-decoration: underline;
-    padding: 5px 10px;
-    display: block; /* Ensures links take up the full width */
+    padding: 10px 15px; /* Adds padding */
+    display: block; /* Full-width clickable link */
 }
 
 #main-nav-hours ul li a:hover {
