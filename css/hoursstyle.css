@@ -109,7 +109,7 @@
 }
 
 #main-nav-hours ul li a.active {
-    background-color: #FC421B;
+    background-color: #red;
     color: white;
-    border-color: #FC421B;
+    border-color: #pink;
 }
