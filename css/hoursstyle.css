@@ -73,19 +73,19 @@
     text-align: right;
 }
 
-#main-nav ul {
+#main-nav-hours ul {
   display: flex;
   list-style: none;
 }
-#main-nav ul li {
+#main-nav-hours ul li {
   margin: 15px 40px;
 }
-#main-nav ul li a {
+#main-nav-hours ul li a {
   color: black;
   text-decoration: underline;
 }
 
-#main-nav ul li a:hover {
+#main-nav-hours ul li a:hover {
   background-color: #333;
   color: black;
   border-radius: 500px;
