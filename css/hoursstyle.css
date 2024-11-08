@@ -28,8 +28,7 @@
 /* Styling for the h1 section */
 .h1-container {
     margin-bottom: 20px;
-    background-color: #ffe5e5; /* Optional: background color for the h1 container */
-    padding: 10px;
+    background-color: #FC421B; 
     border-radius: 8px;
     color: #333;
     font-size: 2em;
@@ -74,21 +73,24 @@
 }
 
 #main-nav-hours ul {
-  display: flex;
-  list-style: none;
+    list-style: none;
+    padding: 0;
 }
+
 #main-nav-hours ul li {
-  margin: 15px 40px;
+    margin: 15px 0; /* Vertical margin between items */
 }
+
 #main-nav-hours ul li a {
-  color: black;
-  text-decoration: underline;
+    color: black;
+    text-decoration: underline;
+    padding: 5px 10px;
+    display: block; /* Ensures links take up the full width */
 }
 
 #main-nav-hours ul li a:hover {
-  background-color: #333;
-  color: black;
-  border-radius: 500px;
-  text-decoration: underline;
-} 
- 
+    background-color: #333;
+    color: white;
+    border-radius: 500px;
+    text-decoration: underline;
+}
