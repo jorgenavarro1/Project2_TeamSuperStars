@@ -27,7 +27,7 @@
 
 .h1-container {
     margin-bottom: 20px;
-    background-color: #FC421B;
+    background-color: black; /* Changed header background to black */
     border-radius: 8px;
     color: #fff;
     font-size: 2em;
