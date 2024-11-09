@@ -135,11 +135,18 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Menu items styling */
+.menu-section .section-description {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Menu items grid layout */
 .menu-items {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 .menu-item {
