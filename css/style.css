@@ -1,11 +1,13 @@
+body {
+  background: rgb(136, 40, 57);
+  padding: 10px;
+}
+
 header {
-  text-align: center;
-  top: 0;
-  left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 10px;
 }
 
 #main-nav ul {
@@ -27,20 +29,25 @@ header {
   text-decoration: underline;
 }
 
-h1, h2{
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 3em; /* 52px; */
+h1, h2, .anton-regular {
+  font-family: "Anton", "Arial";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em; /* 35px */
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 1em; /* 17px */
   font-weight: bold;
   margin-bottom: 0px;
   margin-top: 40px;
 }
+
 html {
-    font-size: 16px; 
+   line-height: 3em; /* 52px */
+   font-size: 18px;
+   text-align: center; 
+   align-content: center;
 }
 
 label {
@@ -48,36 +55,45 @@ label {
     height: 30px;
 }
 input {
-    width: 90%;
     align-items: center;
+    height: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-
 .button {
-  background-color: rgb(77, 5, 5);
+    background-color: rgb(77, 5, 5);
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+div {
   width: 100%;
-  padding: 20px;
-  font-size: 10px;
+  margin: 0 auto;
 }
 
 main {
-  padding: 40px;
   text-align: center;
   width: 100%;
 }
 
 
 @media screen and (min-width: 620px) {
+
+body {
+    padding: 115px;
+}
+
 h1 {
     text-align: center;
-    margin-bottom: 50px;
-    text-underline-position: under;
+   
   }
 
 input {
     height: 40px;
-    margin-bottom: 20px;
-    width: 90%;
+    width: 70%;
     border-color: gray;
     text-align: center;
   }
@@ -85,26 +101,23 @@ input {
 
 .button {
     margin-bottom: 10px;
-    width: 50%;
-  }
-
-body {
-    padding-top: 20px;
+    width: 70%;
   }
 
 
  label {
     width: 90%;
  }
-
+}
 @media screen and (min-width: 960px) {
+
 input {
     height: 60px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     width: 30%;
   }
 
-label,  {
+label {
     font-size: 18;
 }
 
@@ -117,15 +130,15 @@ label,  {
   }
 
 body {
-    padding-top: 50px;
-  }
-
-
-html {
-    line-height: 1em; /* 86px */ 
-    text-align: center;
+    padding: 50px;
   }
 
 h1 {
     font-size: 40px;
   }
+
+h2 {
+    padding-bottom: 60px;
+    padding-top: 0px;
+}
+}
