@@ -27,25 +27,20 @@ header {
   text-decoration: underline;
 }
 
-#promo-text, h1, h2{
+h1, h2{
   text-align: center;
   margin-bottom: 20px;
   font-size: 3em; /* 52px; */
 }
 
-#promo-text, h2 {
+h2 {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 0px;
   margin-top: 40px;
 }
-#promo-text, html {
+html {
     font-size: 16px; 
-}
-
-.form {
-    margin-bottom: 10px;
-    width: 98%;
 }
 
 label {
@@ -65,7 +60,7 @@ input {
   font-size: 10px;
 }
 
-.form, main {
+main {
   padding: 40px;
   text-align: center;
   width: 100%;
@@ -73,7 +68,7 @@ input {
 
 
 @media screen and (min-width: 620px) {
-.form, h1 {
+h1 {
     text-align: center;
     margin-bottom: 50px;
     text-underline-position: under;
@@ -93,14 +88,10 @@ input {
     width: 50%;
   }
 
-.form, body {
+body {
     padding-top: 20px;
   }
 
- .form {
-    line-height: 4em; /* 52px */
-    font-size: 15px; 
- }
 
  label {
     width: 90%;
@@ -113,7 +104,7 @@ input {
     width: 30%;
   }
 
-.form, label,  {
+label,  {
     font-size: 18;
 }
 
@@ -125,20 +116,16 @@ input {
     font-size: 20px;
   }
 
-.form, body {
+body {
     padding-top: 50px;
   }
 
 
-.form, html {
+html {
     line-height: 1em; /* 86px */ 
     text-align: center;
   }
 
-.form, h1 {
+h1 {
     font-size: 40px;
   }
-
-.form {
-    font-size: 20px;
-}
