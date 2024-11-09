@@ -126,14 +126,12 @@ body {
 
 /* Menu items styling */
 .menu-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
 .menu-item {
-    flex: 1 1 calc(48% - 1rem);
-    margin: 0.5rem;
     background-color: #f1f1f1;
     padding: 1rem;
     border-radius: 8px;
