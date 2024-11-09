@@ -8,26 +8,25 @@
   <script src="scripts/main.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Tako Grill Menu</h1>
+  <aside class="sidebar">
+    <img src="path_to_logo.png" alt="Tako Grill Logo" class="logo">
     <nav id="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="Promotions.html">Promotions</a></li>
-      </ul> 
+        <li><a href="promotions.html">Promotions</a></li>
+      </ul>
     </nav>
+    <div class="contact-info">
+      <p>4914 Hampden Ln, Bethesda, MD 20814</p>
+      <p>301.652.7030</p>
+    </div>
+  </aside>
+
+  <header>
+    <h1>Tako Grill Menu</h1>
   </header>
-  
-  <div class="main-banner"> 
-   <img src="path_to_main_image.jpg" alt="Delicious Dish" class="banner-image"> 
-   <div class="banner-text"> 
-     <h1>Welcome to TAKO GRILL</h1> 
-	 <p>The best Japanese cuisine restaurant in Bethesda, MD</p> 
-	 <a href="booking.html" class="cta-button">BOOK ONLINE</a> 
-   </div> 
-  </div>
-  
+
   <section class="filter-buttons">
     <button onclick="filterMenu('all')">All</button>
     <button onclick="filterMenu('popular')">Popular</button>
@@ -68,10 +67,9 @@
         <h3>Udon <span class="price">$16</span></h3>
         <p>Udon Noodle in Clear Soy-based Broth with Scallion.</p>
       </div>
-	  
-	  <div class="menu-item" data-tags="all" data-image="pics/pic11.jpg">
-        <span>Nabeyaki Udon</span>
-        <span>$24</span>
+      
+      <div class="menu-item" data-tags="all" data-image="pics/pic11.jpg">
+        <h3>Nabeyaki Udon <span class="price">$24</span></h3>
         <p>Udon Noodle Soup with Chicken, Egg, Clam, and Fish Cake. Served with 2 Shrimp Tempura on the side.</p>
       </div>
 
@@ -79,11 +77,9 @@
         <h3>Miso Ramen <span class="price">$19</span> <span class="icon spicy" title="Spicy"></span></h3>
         <p>Ramen Noodle Soup with Roasted Pork, Boiled Egg, Fish Cake, Bamboo Shoots, Scallion, and Seaweed.</p>
       </div>
-	  
-	  <div class="menu-item" data-tags="spicy" data-image="pics/pic10.jpg">
-        <span>Spicy Miso Ramen</span>
-        <span>$19</span>
-        <span class="icon spicy" title="Spicy"></span>
+      
+      <div class="menu-item" data-tags="spicy" data-image="pics/pic10.jpg">
+        <h3>Spicy Miso Ramen <span class="price">$19</span> <span class="icon spicy" title="Spicy"></span></h3>
         <p>Ramen Noodle Soup with Roasted Pork, Boiled Egg, Fish Cake, Bamboo Shoots, Scallion, and Seaweed.</p>
       </div>
 
@@ -98,13 +94,6 @@
       </div>
     </section>
   </main>
-
-  <footer>
-    <address>
-      <p>4914 Hampden Ln, Bethesda, MD 20814</p>
-      <p>301.652.7030</p>
-    </address>
-  </footer>
 
 </body>
 </html>
