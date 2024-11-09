@@ -96,12 +96,18 @@ body {
 }
 
 .filter-buttons button.active {
-    background-color: #e3342f; /* Or any color you prefer */
+    background-color: #e3342f;
     color: #fff;
 }
 
 .filter-buttons button {
     cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: #f1f1f1;
+    border: none;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
 }
 
 .filter-buttons button:hover {
@@ -119,25 +125,24 @@ body {
 }
 
 .menu-section h2 {
-    font-size: 2.5rem; /* Larger headers for better visual hierarchy */
+    font-size: 2.5rem; 
     margin-bottom: 1rem;
 }
 
 /* Menu items styling */
 .menu-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Two-column layout */
-    gap: 1rem; /* Gap between items */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
 .menu-item {
-    background-color: #f1f1f1;
+    background-color: #fff;
     padding: 1rem;
     border-radius: 8px;
-    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
     overflow: hidden;
-    font-size: 1.1rem; /* Slightly larger font */
 }
 
 .menu-item:hover {
@@ -194,14 +199,17 @@ body {
     vertical-align: middle;
 }
 
-.menu-item:hover::after {
+.menu-item:hover::before {
     content: attr(data-image);
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
 }
