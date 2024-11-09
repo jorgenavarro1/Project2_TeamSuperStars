@@ -27,13 +27,13 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f8f8;
     color: #333;
-    margin: 0;
     line-height: 1.6;
     background-image: url('path_to_your_image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+/* Sidebar layout */
 .sidebar {
     width: 250px;
     background-color: #000;
@@ -43,6 +43,7 @@ body {
     padding: 1rem;
 }
 
+/* Logo styling */
 .logo {
     display: block;
     margin: 0 auto 2rem;
@@ -50,31 +51,43 @@ body {
     height: auto;
 }
 
-nav ul {
+/* Navigation styling */
+#main-nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
+#main-nav ul li {
     margin-bottom: 1rem;
 }
 
-nav ul li a {
+#main-nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
+#main-nav ul li a:hover,
+#main-nav ul li a.active {
+    color: #e3342f;
+}
+
+/* Contact information styling */
 .contact-info {
     margin-top: 2rem;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
-header {
-    padding: 1rem;
-    text-align: center;
-    margin-left: 250px;
+.contact-info p {
+    margin: 0.5rem 0;
 }
 
+/* Filter button styling */
 .filter-buttons {
     display: flex;
     justify-content: center;
@@ -96,6 +109,7 @@ header {
     background-color: #555;
 }
 
+/* Menu container styling */
 .menu-container {
     padding: 2rem;
     margin-left: 250px;
@@ -110,6 +124,7 @@ header {
     margin-bottom: 1rem;
 }
 
+/* Menu items styling */
 .menu-items {
     display: flex;
     flex-wrap: wrap;
@@ -141,6 +156,7 @@ header {
     color: #333;
 }
 
+/* Icons styling */
 .icon {
     display: inline-block;
     width: 20px;
