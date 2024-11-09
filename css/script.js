@@ -1,18 +1,24 @@
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Remove 'active' class from all buttons
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        // Add 'active' class to the clicked button
-        button.classList.add('active');
+document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll('.filter-buttons button');
+    const menuItems = document.querySelectorAll('.menu-item');
 
-        // Existing filtering logic
-        const filter = button.getAttribute('data-filter');
-        menuItems.forEach(item => {
-            if (filter === 'all' || item.getAttribute('data-category').includes(filter)) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+
+            // Apply filtering logic
+            menuItems.forEach(item => {
+                const categories = item.getAttribute('data-category');
+                if (filter === 'all' || categories.includes(filter)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Update active class for buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
         });
     });
 });
