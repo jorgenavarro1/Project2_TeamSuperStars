@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tako Grill Menu</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="pics/logo.png" alt="Tako Grill Logo" class="logo">
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu-page.html">Menu</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+      <p>4914 Hampden Ln, Bethesda, MD 20814</p>
+      <p>301.652.7030</p>
+    </div>
+   </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Tako Grill Menu</h1>
+    </header>
+
+    <div class="filter-buttons">
+      <button data-filter="all">All</button>
+      <button data-filter="popular">Popular</button>
+      <button data-filter="vegetarian">Vegetarian</button>
+      <button data-filter="spicy">Spicy</button>
+    </div>
+
+ <section class="menu-section" data-category="bento">
+  <h2>Bento Box</h2>
+  <p class="section-description">Includes: Steamed Rice, Cooked Vegetables, Omelet, Shrimp Shumai, Bean Sprout, Edamame, and Pickled Radish</p>
+
+  <div class="menu-items"> <!-- Wrap the menu items in a container -->
+    <div class="menu-item" data-category="all popular" data-image="pics/pic1.jpg">
+      <h3>Tonkatsu <span class="price">$25</span> <span class="icon popular" title="Popular"></span></h3>
+      <p>Fried Breaded Pork Cutlet.</p>
+    </div>
+
+    <div class="menu-item" data-category="all" data-image="pics/pic2.jpg">
+      <h3>Grilled Fish <span class="price">$25</span></h3>
+      <p>Broiled Salmon Teriyaki.</p>
+    </div>
+
+    <div class="menu-item" data-category="all" data-image="pics/pic3.jpg">
+      <h3>Tempura <span class="price">$25</span></h3>
+      <p>Deep Fried Shrimp and Vegetables.</p>
+    </div>
+
+    <div class="menu-item" data-category="all" data-image="pics/pic4.jpg">
+      <h3>Chicken Kara-age <span class="price">$25</span></h3>
+      <p>Deep Fried Marinated Chicken.</p>
+    </div>
+  </div> <!-- Close the menu items container -->
+</section>
+
+<section class="menu-section" data-category="noodles">
+  <h2>Noodles</h2>
+
+  <div class="menu-items"> <!-- Wrap the menu items in a container -->
+    <div class="menu-item" data-category="all" data-image="pics/pic5.jpg">
+      <h3>Udon <span class="price">$16</span></h3>
+      <p>Udon Noodle in Clear Soy-based Broth with Scallion</p>
+    </div>
+
+    <div class="menu-item" data-category="all" data-image="pics/pic11.jpg">
+      <h3>Nabeyaki Udon <span class="price">$24</span></h3>
+      <p>Udon Noodle Soup with Chicken, Egg, Clam, and Fish Cake. Served with 2 Shrimp Tempura on the side</p>
+    </div>
+
+    <div class="menu-item" data-category="all spicy" data-image="pics/pic7.jpg">
+      <h3>Miso Ramen <span class="price">$19</span> <span class="icon spicy" title="Spicy"></span></h3>
+      <p>Ramen Noodle Soup with Roasted Pork, Boiled Egg, Fish Cake, Bamboo Shoots, Scallion, and Seaweed</p>
+    </div>
+
+    <div class="menu-item" data-category="spicy" data-image="pics/pic10.jpg">
+      <h3>Spicy Miso Ramen <span class="price">$19</span> <span class="icon spicy" title="Spicy"></span></h3>
+      <p>Ramen Noodle Soup with Roasted Pork, Boiled Egg, Fish Cake, Bamboo Shoots, Scallion, and Seaweed</p>
+    </div>
+	
+	<div class="menu-item" data-category="spicy" data-image="pics/pic6.jpg">
+      <h3>Soy Ramen <span class="price">$19</span> <span class="icon spicy" title="Spicy"></span></h3>
+      <p>Ramen Noodle Soup with Roasted Pork, Boiled Egg, Fish Cake, Bamboo Shoots, Scallion, and Seaweed</p>
+    </div>
+
+    <div class="menu-item" data-category="all" data-image="pics/pic8.jpg">
+      <h3>Tempura Soba <span class="price">$21</span></h3>
+      <p>Soba Noodle Soup with 2 pieces Shrimp Tempura and Scallion</p>
+    </div>
+
+    <div class="menu-item" data-category="vegetarian" data-image="pics/pic9.jpg">
+      <h3>Vegetable Soba <span class="price">$19</span> <span class="icon vegetarian" title="Vegetarian"></span></h3>
+      <p>Soba Noodle Soup with Shiitake Mushroom, Sprouts, and Scallions</p>
+    </div>
+  </div>
+</section>
+  </div>
+</body>
+</html>
