@@ -31,6 +31,8 @@ body {
     background-image: url('path_to_your_image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    padding-left: 270px; /* Ensure content stays away from sidebar */
+    box-sizing: border-box;
 }
 
 /* Sidebar layout */
@@ -51,12 +53,12 @@ body {
 .main-content {
     margin-left: 270px;
     padding: 2rem;
-    max-width: calc(100% - 270px);
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 /* Logo styling */
@@ -135,7 +137,6 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
 }
 
 /* Menu sections */
