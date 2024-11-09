@@ -28,6 +28,7 @@ body {
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
+    background-image: url('path_to_your_image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -121,7 +122,7 @@ body {
     margin: 2rem auto;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 /* Menu sections */
@@ -139,6 +140,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    justify-items: center;
 }
 
 .menu-item {
@@ -149,7 +151,8 @@ body {
     transition: transform 0.2s;
     overflow: hidden;
     max-width: 300px;
-    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .menu-item:hover {
@@ -206,8 +209,9 @@ body {
     vertical-align: middle;
 }
 
+/* Hover effect for images and descriptions */
 .menu-item:hover::before {
-    content: attr(data-image);
+    content: "";
     display: block;
     position: absolute;
     top: 50%;
@@ -215,6 +219,7 @@ body {
     transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
+    background-image: url(attr(data-image));
     background-size: cover;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.9);
