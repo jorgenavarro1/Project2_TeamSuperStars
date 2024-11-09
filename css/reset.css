@@ -95,19 +95,19 @@ body {
     margin-left: 250px;
 }
 
-.filter-buttons button {
-    margin: 0 0.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #333;
+.filter-buttons button.active {
+    background-color: #e3342f; /* Or any color you prefer */
     color: #fff;
+}
+
+.filter-buttons button {
     cursor: pointer;
-    border-radius: 5px;
 }
 
 .filter-buttons button:hover {
     background-color: #555;
 }
+
 
 /* Menu container styling */
 .menu-container {
@@ -165,16 +165,34 @@ body {
     margin-left: 0.5rem;
 }
 
-.icon.spicy {
-    background-image: url('pics/spicy-icon.jpg');
-}
-
 .icon.vegetarian {
     background-image: url('pics/vegetarian-icon.jpg');
+	width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: contain;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.icon.spicy {
+    background-image: url('pics/spicy-icon.jpg');
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: contain;
+    margin-left: 5px;
+    vertical-align: middle;
 }
 
 .icon.popular {
-    background-image: url('pics/popular-icon.png');
+    background-image: url('pics/popular-icon.png'); 
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: contain;
+    margin-left: 5px;
+    vertical-align: middle;
 }
 
 .menu-item:hover::after {
