@@ -26,18 +26,30 @@ body {
     color: #333;
     margin: 0;
     line-height: 1.6;
+    background-image: url('path_to_your_background_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
     list-style-type: none;
 }
 
@@ -50,23 +62,41 @@ nav ul li a {
     text-decoration: none;
 }
 
-.filter-buttons {
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0;
+.contact-info {
+    text-align: right;
 }
 
-.filter-buttons button {
-    margin: 0 0.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
+.main-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.cta-button {
     background-color: #333;
     color: #fff;
-    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
 }
 
-.filter-buttons button:hover {
+.cta-button:hover {
     background-color: #555;
 }
 
