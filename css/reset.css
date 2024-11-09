@@ -20,15 +20,18 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+/* Importing a custom font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;  /* Change this to the desired background color */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
     color: #333;
     margin: 0;
     line-height: 1.6;
-    background-image: url('path_to_your_image.jpg');  /* Add the path to your background image */
-    background-size: cover;  /* Make the background image cover the entire page */
-    background-repeat: no-repeat;  /* Ensure the image doesn't repeat */
+    background-image: url('path_to_your_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .sidebar {
@@ -69,14 +72,14 @@ nav ul li a {
 header {
     padding: 1rem;
     text-align: center;
-    margin-left: 250px; /* Adjust the margin to account for the sidebar */
+    margin-left: 250px;
 }
 
 .filter-buttons {
     display: flex;
     justify-content: center;
     margin: 1rem 0;
-    margin-left: 250px; /* Adjust the margin to account for the sidebar */
+    margin-left: 250px;
 }
 
 .filter-buttons button {
@@ -95,7 +98,7 @@ header {
 
 .menu-container {
     padding: 2rem;
-    margin-left: 250px; /* Adjust the margin to account for the sidebar */
+    margin-left: 250px;
 }
 
 .menu-section {
@@ -157,8 +160,6 @@ header {
 .icon.popular {
     background-image: url('pics/popular-icon.png');
 }
-
-
 
 .menu-item:hover::after {
     content: attr(data-image);
