@@ -1,0 +1,152 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.filter-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-buttons button:hover {
+    background-color: #555;
+}
+
+.menu-container {
+    padding: 2rem;
+}
+
+.menu-section {
+    margin-bottom: 2rem;
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 48%;
+    margin: 1%;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item .price {
+    float: right;
+    font-size: 1rem;
+    color: #333;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    margin-left: 0.5rem;
+}
+
+.icon.spicy {
+    background-image: url('pics/spicy-icon.jpg');
+}
+
+.icon.vegetarian {
+    background-image: url('pics/vegetarian-icon.jpg');
+}
+
+.icon.popular {
+    background-image: url('pics/popular-icon.png');
+}
+
+.contact {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+
+.menu-item:hover::after {
+    content: attr(data-image);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
