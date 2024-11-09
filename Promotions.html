@@ -21,28 +21,20 @@
     </nav>
   </header>
   <main>
-    <div id="promo-text">
-      <h1>Want 15% Off Your Next Order?</h1>
-      <h2>Sign up now to get 15% off your next meal, as well as promotions sent to you weekly!</h2>
+    <h1>Want 15% Off Your Next Order?</h1>
+    <h2>Sign up now to get 15% off your next meal, as well as promotions sent to you weekly!</h2>
+    <form action="#null" method="post" autocomplete="on">
+    <div id="email">
+      <label for="myform_email">Email Address:</label>
+      <input type="email" name="email_field" placeholder="Email Address">
     </div>
-    <div class="form">
-      <form action="#null" method="post" autocomplete="on">
-      <div id="email">
-        <label for="myform_email">Email Address:</label>
-        <input type="email" name="email_field" placeholder="Email Address">
-      </div>
+    <div id="phone">
+      <label for="myform_phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" 
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
     </div>
-    <div class="form">
-      <div id="phone">
-        <label for="myform_phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" 
-         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-         required>
-      </div>
-    </div>
-    <div class="form">
-      <button type="submit" class="button">Sign Me Up Now!</button>
-    </div>
+    <button type="submit" class="button">Sign Me Up Now!</button>
   </main>
 </body>
 </html>
