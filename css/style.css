@@ -108,70 +108,69 @@ body {
 }
 
 /* Promotion Page Specific Styles */
-.promo-page h1 { 
-  font-size: 3rem; 
-  font-weight: bold; 
-  color: #FF4500; /* Festive color */ 
-  text-align: center; 
-  margin-bottom: 1rem; 
-} 
-
-.promo-page h2, .promo-page h3 { 
-  font-size: 2rem; 
+.promo-page h1 {
+  font-size: 3rem;
   font-weight: bold;
-  color: #FF6347; /* Festive color */ 
-  text-align: center; 
-  margin-bottom: 1rem; 
-} 
+  color: #FF4500; /* Festive color */
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
-.promo-page label { 
-  font-size: 1.2rem; 
-  font-weight: bold; 
-  color: #FF4500; /* Festive color */ 
-} 
+.promo-page h2, .promo-page h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FF6347; /* Festive color */
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
-.promo-page input[type="text"], .promo-page input[type="email"], .promo-page input[type="tel"] { 
-  font-size: 1rem; 
-  padding: 10px; 
-  border: 2px solid #FF4500; /* Festive border color */ 
-  border-radius: 5px; 
-  margin-bottom: 1rem; 
-  width: 100%; 
-  box-sizing: border-box; 
-} 
+.promo-page label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FF4500; /* Festive color */
+}
 
-.promo-page button { 
-  font-size: 1.2rem; 
-  font-weight: bold; 
-  color: white; 
-  background-color: #FF4500; /* Festive background color */ 
-  padding: 10px 20px; 
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  width: 100%; 
-  box-sizing: border-box; 
-} 
+.promo-page input[type="text"], .promo-page input[type="email"], .promo-page input[type="tel"] {
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid #FF4500; /* Festive border color */
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-.promo-page button:hover { 
-  background-color: #FF6347; /* Festive hover color */ 
-} 
+.promo-page button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #FF4500; /* Festive background color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-.promo-page .promo-content { 
-  max-width: 600px; 
-  margin: 0 auto; 
-  text-align: center; 
-} 
+.promo-page button:hover {
+  background-color: #FF6347; /* Festive hover color */
+}
 
-.promo-page .promo-content form div { 
-  margin-bottom: 1rem; 
-} 
+.promo-page .promo-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffe5e5; /* Light reddish background color */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-.promo-page .promo-content { 
-  background-color: #fffaf0; 
-  padding: 2rem; 
-  border-radius: 10px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+/* Add some spacing between form fields */
+.promo-page .promo-content form div {
+  margin-bottom: 1rem;
+}
 
 /* Menu container styling */
 .menu-container {
