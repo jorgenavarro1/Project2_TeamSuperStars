@@ -287,3 +287,61 @@ body {
   margin-left: 5px;
   vertical-align: middle;
 }
+
+/* Media Queries */
+
+/* Small screens (phones, <600px) */
+@media (max-width: 599px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+    .filter-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Medium screens (tablets, 600px-1199px) */
+@media (min-width: 600px) and (max-width: 1199px) {
+    .sidebar {
+        width: 200px;
+    }
+    .main-content {
+        margin-left: 220px;
+        padding: 1.5rem;
+    }
+    .menu-section h2 {
+        font-size: 2rem;
+    }
+    .menu-item {
+        max-width: 250px;
+    }
+}
+
+/* Large screens (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .sidebar {
+        width: 220px;
+    }
+    .main-content {
+        margin-left: 240px;
+        padding: 2rem;
+    }
+    .menu-section h2 {
+        font-size: 2.5rem;
+    }
+    .menu-item {
+        max-width: 300px;
+    }
+    .filter-buttons button {
+        padding: 0.75rem 1.5rem;
+    }
+}
