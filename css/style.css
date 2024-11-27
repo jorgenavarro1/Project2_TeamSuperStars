@@ -34,9 +34,9 @@ body {
   overflow-y: auto;
   min-height: 100vh;
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-overflow-x: hidden
+ overflow-x: hidden
 }
 
 /* Logo styling */
@@ -218,6 +218,11 @@ overflow-x: hidden
   box-sizing: border-box;
   margin: 0 auto;
 }
+.menu-item img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover; /* Keeps the aspect ratio intact while filling the box */
+}
 
 .menu-item:hover {
   transform: scale(1.05);
@@ -253,8 +258,8 @@ overflow-x: hidden
 /* Icons styling */
 .icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   background-size: contain;
   margin-left: 0.5rem;
   vertical-align: middle;
@@ -262,8 +267,8 @@ overflow-x: hidden
 
 .icon.vegetarian {
   background-image: url('pics/vegetarian-icon.jpg');
-  width: 16px;
-  height: 16px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
   background-size: contain;
   margin-left: 5px;
@@ -272,8 +277,8 @@ overflow-x: hidden
 
 .icon.spicy {
   background-image: url('pics/spicy-icon.jpg');
-  width: 16px;
-  height: 16px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
   background-size: contain;
   margin-left: 5px;
@@ -282,8 +287,8 @@ overflow-x: hidden
 
 .icon.popular {
   background-image: url('pics/popular-icon.png'); 
-  width: 16px;
-  height: 16px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
   background-size: contain;
   margin-left: 5px;
@@ -303,14 +308,13 @@ overflow-x: hidden
 }
 
 .hourspage-container {
-    text-align: center;
-    background-color: #fff;
- padding: 5px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    width: 100%;
-    margin-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffe5e5;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .hourspage-h1-container {
