@@ -4,37 +4,51 @@
   <title>Promotions</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
-  <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css">
+  <link rel="stylesheet" media="screen" href="css/reset.css">
   <link rel="stylesheet" media="screen" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
+<body class="promo-page">
+  <div class="sidebar">
+    <img src="pics/logo.png" alt="Tako Grill Logo" class="logo">
     <nav id="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="menu-page.html">Menu</a></li>
-        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="promotions.html" class="active">Promotions</a></li>
       </ul>
     </nav>
-  </header>
-  <main>
-    <h1>Want 15% Off Your Next Order?</h1>
-    <h2>Sign up now to get 15% off your next meal, as well as promotions sent to you weekly!</h2>
-    <form action="#null" method="post" autocomplete="on">
-    <div id="email">
-      <label for="myform_email">Email Address:</label>
-      <input type="email" name="email_field" placeholder="Email Address">
+    <div class="contact-info">
+      <p>4914 Hampden Ln, Bethesda, MD 20814</p>
+      <p>301.652.7030</p>
     </div>
-    <div id="phone">
-      <label for="myform_phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" 
-       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-       required>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Promotions</h1>
+    </header>
+
+    <div class="promo-content">
+      <h2>Want 15% Off Your Next Order?</h2>
+      <h3>Sign up now to get 15% off your next meal, as well as promotions sent to you weekly!</h3>
+      <form action="#null" method="post" autocomplete="on">
+        <div id="email">
+          <label for="myform_email">Email Address:</label>
+          <input type="email" name="email_field" placeholder="Email Address">
+        </div>
+        <div id="phone">
+          <label for="myform_phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+           required>
+        </div>
+        <button type="submit" class="button">Sign Me Up Now!</button>
+      </form>
     </div>
-    <button type="submit" class="button">Sign Me Up Now!</button>
-  </main>
+  </div>
 </body>
 </html>
