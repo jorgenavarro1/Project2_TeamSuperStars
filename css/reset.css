@@ -165,6 +165,7 @@ body {
 }
 
 .menu-item {
+  position: relative;
   background-color: #fff;
   padding: 1rem;
   border-radius: 8px;
@@ -192,6 +193,22 @@ body {
   color: #333;
 }
 
+.menu-item:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-image: attr(data-image url);
+  background-size: cover;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+}
+
 /* Icons styling */
 .icon {
   display: inline-block;
@@ -199,6 +216,7 @@ body {
   height: 20px;
   background-size: contain;
   margin-left: 0.5rem;
+  vertical-align: middle;
 }
 
 .icon.vegetarian {
@@ -229,21 +247,4 @@ body {
   background-size: contain;
   margin-left: 5px;
   vertical-align: middle;
-}
-
-/* Hover effect for images and descriptions */
-.menu-item:hover::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
-  background-image: url(attr(data-image));
-  background-size: cover;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 1;
 }
