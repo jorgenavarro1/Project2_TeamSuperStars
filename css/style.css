@@ -300,6 +300,7 @@ body {
     .main-content {
         margin-left: 0;
         padding: 1rem;
+        width: 100%; /* Ensure full width */
     }
     .menu-items {
         grid-template-columns: 1fr;
@@ -317,6 +318,7 @@ body {
     .main-content {
         margin-left: 220px;
         padding: 1.5rem;
+        width: calc(100% - 220px); /* Adjust width */
     }
     .menu-section h2 {
         font-size: 2rem;
@@ -334,6 +336,7 @@ body {
     .main-content {
         margin-left: 240px;
         padding: 2rem;
+        width: calc(100% - 240px); /* Adjust width */
     }
     .menu-section h2 {
         font-size: 2.5rem;
