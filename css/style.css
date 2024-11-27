@@ -36,7 +36,7 @@ body {
   box-sizing: border-box;
   max-width: 100%;
   margin: 0 auto;
-overflow-x: hidden
+ overflow-x: hidden
 }
 
 /* Logo styling */
@@ -220,7 +220,7 @@ overflow-x: hidden
 }
 .menu-item img {
   width: 250px;
-  height: 250px;
+  height: 350px;
   object-fit: cover; /* Keeps the aspect ratio intact while filling the box */
 }
 
@@ -258,8 +258,8 @@ overflow-x: hidden
 /* Icons styling */
 .icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   background-size: contain;
   margin-left: 0.5rem;
   vertical-align: middle;
@@ -267,8 +267,8 @@ overflow-x: hidden
 
 .icon.vegetarian {
   background-image: url('pics/vegetarian-icon.jpg');
-  width: 16px;
-  height: 16px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
   background-size: contain;
   margin-left: 5px;
@@ -277,8 +277,8 @@ overflow-x: hidden
 
 .icon.spicy {
   background-image: url('pics/spicy-icon.jpg');
-  width: 16px;
-  height: 16px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
   background-size: contain;
   margin-left: 5px;
@@ -287,8 +287,8 @@ overflow-x: hidden
 
 .icon.popular {
   background-image: url('pics/popular-icon.png'); 
-  width: 16px;
-  height: 16px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
   background-size: contain;
   margin-left: 5px;
